@@ -2,14 +2,6 @@
 
 Transform your photos with the power of AI! Pictoria AI is your ultimate solution for creating/generating professional AI-generated photos, similar to the popular PhotoAI platform. Perfect for LinkedIn headshots, Instagram content, dating profile pictures, and professional portraits. Train AI model on your personal images and generate stunning, high-quality AI-generated photos within minutes.
 
-![GitHub stars](https://img.shields.io/github/stars/codebucks27/Pictoria-AI-Starter-Code?style=social&logo=ApacheSpark&label=Stars)&nbsp;&nbsp;
-![GitHub forks](https://img.shields.io/github/forks/codebucks27/Pictoria-AI-Starter-Code?style=social&logo=KashFlow&maxAge=3600)&nbsp;&nbsp;
-![Github Followers](https://img.shields.io/github/followers/codebucks27.svg?style=social&label=Follow)&nbsp;&nbsp;<br />
-
-If you want to learn how to create it please follow below tutorial👇: <br />
-➡ Tutorial Link 💚: [How to Build a $1M PhotoAI Sass Clone](https://youtu.be/7AQNeii5K7E) <br />
-➡ Final Source Code💛: https://dub.sh/wYWBX9z (Get 40% discount with code **NEWYEAR40** Offer ends December 31st) 
-
 
 🎯 For customised solutions or deployment please contact: https://tally.so/r/wdlj0N
 
@@ -33,17 +25,6 @@ If you want to learn how to create it please follow below tutorial👇: <br />
 - 📊 Usage Analytics
 - 🎁 ...much more
 
-## Images of The AI App:
-
-![Photo AI clone Dashboard](https://github.com/codebucks27/Pictoria-AI-Starter-Code/blob/main/screenshots/Dashboard.png)
----
-![Photo AI clone Image Generation Page](https://github.com/codebucks27/Pictoria-AI-Starter-Code/blob/main/screenshots/Image-Generation.png)
----
-![Photo AI clone Model Training Page](https://github.com/codebucks27/Pictoria-AI-Starter-Code/blob/main/screenshots/Model-Training.png)
----
-![Photo AI clone Billing Page](https://github.com/codebucks27/Pictoria-AI-Starter-Code/blob/main/screenshots/Billing.png)
----
-![Photo AI clone Account Settings Page](https://github.com/codebucks27/Pictoria-AI-Starter-Code/blob/main/screenshots/Account-Settings.png)
 
 ## 🛠️ Tech Stack
 
@@ -161,9 +142,8 @@ Give a ⭐️ if this project helped you!
 
 If you have any question or want a custom build for your business, you can reach out to me via:
 
-- E-mail : codebucks27@gmail.com
-- Twitter: https://twitter.com/code_bucks
-- Instagram: https://www.instagram.com/code.bucks/
+- E-mail : gbalekage21@gmail.com
+- X: https://x.com/GaelBalekage1
+- Instagram: https://www.instagram.com/balekage_gael
 
-MyChannel: https://www.youtube.com/codebucks
-My Website: https://devdreaming.com/
+My Website: https://balekagegael.com/
