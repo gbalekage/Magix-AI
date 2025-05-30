@@ -1,30 +1,7 @@
-"use client";
-
 import * as React from "react";
-import {
-  AudioWaveform,
-  BookOpen,
-  Bot,
-  BotIcon,
-  Command,
-  CreditCard,
-  Frame,
-  GalleryVerticalEnd,
-  Image,
-  Images,
-  Layers,
-  Map,
-  PieChart,
-  Settings,
-  Settings2,
-  Sparkles,
-  SquareTerminal,
-} from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 import { NavMain } from "@/components/nav-main";
-import { NavProjects } from "@/components/nav-projects";
-import { NavUser } from "@/components/nav-user";
-import { TeamSwitcher } from "@/components/team-switcher";
 import {
   Sidebar,
   SidebarContent,
@@ -33,47 +10,20 @@ import {
   SidebarMenuButton,
   SidebarRail,
 } from "@/components/ui/sidebar";
+import { createClient } from "@/lib/superbase/server";
+import { NavUser } from "./nav-user";
 
-// This is sample data.
-const data = [
-  {
-    title: "Dashboard",
-    url: "/dashboard",
-    icon: SquareTerminal,
-  },
-  {
-    title: "Generer une image",
-    url: "/image-generation",
-    icon: Image,
-  },
-  {
-    title: "Mes modèles",
-    url: "/models",
-    icon: Frame,
-  },
-  {
-    title: "Train un modèle",
-    url: "/model-training",
-    icon: Layers,
-  },
-  {
-    title: "Mes Images",
-    url: "/images",
-    icon: Images,
-  },
-  {
-    title: "Billing",
-    url: "/billing",
-    icon: CreditCard,
-  },
-  {
-    title: "Parametres",
-    url: "/account-settings",
-    icon: Settings,
-  },
-];
+export async function AppSidebar({
+  ...props
+}: React.ComponentProps<typeof Sidebar>) {
+  const supabase = await createClient();
+  const { data } = await supabase.auth.getUser();
 
-export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+  const user = {
+    name: data.user?.user_metadata.full_name,
+    email: data.user?.email ?? "",
+  };
+
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
@@ -91,9 +41,11 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         </SidebarMenuButton>
       </SidebarHeader>
       <SidebarContent>
-        <NavMain items={data} />
+        <NavMain />
       </SidebarContent>
-      <SidebarFooter>{/* <NavUser user={data.user} /> */}</SidebarFooter>
+      <SidebarFooter>
+        <NavUser user={user} />
+      </SidebarFooter>
       <SidebarRail />
     </Sidebar>
   );

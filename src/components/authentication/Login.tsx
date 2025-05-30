@@ -1,5 +1,5 @@
 "use client";
-import React, { useId } from "react";
+import React from "react";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -30,7 +30,8 @@ const formSchema = z.object({
 
 const Login = ({ className }: { className?: string }) => {
   const [loading, setLoading] = React.useState(false);
-  const toastId = useId();
+  // Use a stable toast ID to avoid hydration mismatch
+  const toastId = "login-toast";
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
